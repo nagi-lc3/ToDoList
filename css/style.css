@@ -1,11 +1,18 @@
 @charset "UTF-8";
+@import url("normalize.css");
 
-@import url("normalize.css"); /* ------- Reset all CSS Styles */
+/* ------- Reset all CSS Styles */
+
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	font-size: 16px;
-	font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 16px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+#app {
+    max-width: 640px;
+    margin: 0 auto;
 }
