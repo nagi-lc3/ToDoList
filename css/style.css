@@ -14,5 +14,102 @@ body {
 
 #app {
     max-width: 640px;
-    margin: 0 auto;
+    margin: auto;
+    padding: 0 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    border-bottom: 2px solid #0099e4;
+    color: #0099e4;
+}
+
+th {
+    padding: 0 8px;
+    line-height: 40px;
+}
+
+thead th.id {
+    width: 50px;
+}
+
+thead th.state {
+    width: 100px;
+}
+
+thead th.button {
+    width: 60px;
+}
+
+tbody td.button,
+tbody td.state {
+    text-align: center;
+}
+
+tbody tr td,
+tbody tr th {
+    border-bottom: 1px solid #ccc;
+    transition: all 0.4s;
+}
+
+tbody tr:hover td,
+tbody tr:hover th {
+    background: #f4fbff;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    line-height: 24px;
+    padding: 0 8px;
+    background: #0099e4;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: 0;
+}
+
+button:hover {
+    background: #22bbf6;
+}
+
+#precautions {
+    color: #777777;
+}
+
+input[type="text"] {
+    width: 345px;
+    height: 30px;
+}
+
+label {
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+h2 {
+    margin-top: 50px;
+}
+
+
+/* Vue.jsのCSS */
+
+@keyframes cloak-in {
+    0% {
+        opacity: 0;
+    }
+}
+
+#app {
+    animation: cloak-in 1s;
+}
+
+#app[v-cloak] {
+    opacity: 0;
 }

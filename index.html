@@ -13,13 +13,12 @@
 
 <body>
     <div id="app">
-        <h1>チュートリアルToDoリスト</h1>
+        <h1>ToDoリスト</h1>
         <!-- 選択用フォーム -->
         <p>
             <label v-for="label in options">
                 <input type="radio" v-model="current" v-bind:value="label.value">{{ label.label }}
-            </label>
-            ({{ computedTodos.length }} 件を表示中)
+            </label> ({{ computedTodos.length }} 件を表示中)
         </p>
 
         <!-- ToDoリストテーブル -->
@@ -28,7 +27,7 @@
                 <tr>
                     <th class="id">ID</th>
                     <th class="comment">コメント</th>
-                    <th class="state">-状態</th>
+                    <th class="state">状態</th>
                     <th class="button">-</th>
                 </tr>
             </thead>
@@ -45,7 +44,7 @@
                 </tr>
             </tbody>
         </table>
-        <p>※削除ボタンはコントロールキーを押しながらクリックして下さい</p>
+        <p id="precautions">※削除ボタンは Ctrl キーを押しながらクリックして下さい</p>
 
         <!-- ToDoリストテーブル追加 -->
         <h2>新しい作業の追加</h2>
